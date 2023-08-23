@@ -20,22 +20,40 @@
   </head>
   <body>
     <!--Header Menu-->
-    <div id="body-content">
+    <main id="body-content">
       <div class="bg-shape"></div>
-      <nav>
+      <header>
         <div class="head">
           <div class="site-title">Room.us</div>
-          <div class="menu">
+          <nav class="menu desktop">
             <div>Home</div>
             <div>Amenities</div>
             <div>Contact Us</div>
-          </div>
+          </nav>
           <div class="search">
             Category
             <img class="search-icon" src="images/search.png" />
           </div>
+
+          <div class="mobile-menu">
+            <input type="checkbox" id="menuToggle" />
+            <label for="menuToggle" class="overlay"></label>
+            <label for="menuToggle" class="menu-icon">
+              <img
+                src="images/menu_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="Menu"
+              />
+            </label>
+
+            <nav class="menu mobile-menu-items">
+              <div>Home</div>
+              <div>Amenities</div>
+              <div>Category</div>
+              <div>Contact Us</div>
+            </nav>
+          </div>
         </div>
-      </nav>
+      </header>
       <div class="circle-shape"></div>
       <!--Main Body-->
       <section>
@@ -46,7 +64,7 @@
           <div class="body-text">
             <div>
               <h4>Work Space</h4>
-              <h2>Modern Design <br />work space</h2>
+              <h2>Modern Design <br />Work Space</h2>
             </div>
             <div>
               <div class="line-shape"></div>
@@ -92,6 +110,6 @@
           <div class="blue-shape"></div>
         </div>
       </footer>
-    </div>
+    </main>
   </body>
 </html>
