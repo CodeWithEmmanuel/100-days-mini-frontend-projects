@@ -1,0 +1,223 @@
+body {
+  background-color: #f5f4ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.bg-behind {
+  background-color: #fdd1d0;
+  width: 600px;
+  height: 500px;
+  border-radius: 35px;
+  position: absolute;
+  z-index: -5;
+}
+.bg-front {
+  background-color: #ffffff;
+  width: 450px;
+  height: 610px;
+  border-radius: 20px;
+}
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.close-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #f5f4ff;
+  border-radius: 100%;
+}
+.close-icons {
+  padding: 2px;
+  filter: invert(53%) sepia(17%) saturate(0%) hue-rotate(194deg)
+    brightness(102%) contrast(88%);
+  width: 25px;
+  height: 25px;
+}
+.stars {
+  display: flex;
+
+  align-items: start;
+
+  width: 390px;
+  margin: auto;
+  margin-top: 5px;
+}
+.star-item {
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid #dbdbe1b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+.star-icon {
+  width: 33px;
+  height: 33px;
+  filter: invert(80%) sepia(43%) saturate(1012%) hue-rotate(341deg)
+    brightness(89%) contrast(92%);
+}
+.star-icons {
+  width: 33px;
+  height: 33px;
+  filter: invert(65%) sepia(2%) saturate(548%) hue-rotate(314deg)
+    brightness(95%) contrast(91%);
+}
+.click-to-rate {
+  font-weight: 100;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.6);
+  width: 390px;
+  margin: auto;
+  margin-top: 5px;
+}
+.review-title {
+  width: 390px;
+  margin: auto;
+  margin-top: 23px;
+  font-size: 11px;
+  font-weight: 600;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input-box {
+  width: 380px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1.5px solid #dbdbe1b3;
+  padding-left: 10px;
+}
+.recommendation {
+  width: 390px;
+  margin: auto;
+  margin-top: 23px;
+  font-size: 13px;
+}
+.checkbox {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+  width: 110px;
+}
+.checkbox-yes,
+.checkbox-no {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 43px;
+}
+.first-box {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.second-box {
+  border: 1.5px solid #dbdbe1b3;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.product-review {
+  width: 390px;
+  margin: auto;
+  margin-top: 23px;
+  font-size: 11px;
+  font-weight: 600;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-review-text {
+  width: 385px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1.5px solid #dbdbe1b3;
+  padding-left: 8px;
+  padding-bottom: 18px;
+}
+.product-review-text::placeholder {
+  white-space: pre-wrap;
+}
+.product-review-text:focus {
+  border-color: grey;
+}
+.reviewer-details {
+  width: 380px;
+  margin: auto;
+  margin-top: 23px;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.nickname,
+.email-address {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+.nickname-input,
+.email-address-input {
+  height: 33px;
+  border-radius: 4px;
+  border: 1.5px solid #dbdbe1b3;
+  padding-left: 10px;
+}
+.accept-terms {
+  width: 390px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.terms-checkbox {
+  border: 1.5px solid #dbdbe1b3;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+a {
+  color: black;
+}
+.notfication-text {
+  width: 360px;
+  margin: auto;
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.2;
+}
+.submit-button {
+  width: 360px;
+  margin: auto;
+  margin-top: 18px;
+}
+button {
+  background-color: #121633;
+  color: white;
+  font-size: 11px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+}
