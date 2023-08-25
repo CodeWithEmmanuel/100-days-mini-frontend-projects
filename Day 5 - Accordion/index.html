@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="heading-text">
+          <h2>The Accordion</h2>
+          <p>
+            The accordion is a graphical control element comprising a vertically
+            stacked list of items, such as labels or thumbnails. Each item can
+            be "expanded" or "collapsed" to reveal the content associated with
+            that item.
+          </p>
+        </div>
+
+        <div class="the-accordions">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-indicator">+</span>
+                When and how should it be used?
+              </button>
+              <div class="accordion-content">
+                Accordions are most effective in user interface scenarios where
+                there's a need to manage a lot of information within limited
+                screen real estate. They provide a way to organize related
+                content into sections, making it easier for users to find and
+                interact with specific pieces of information without feeling
+                overwhelmed.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-indicator">+</span>
+                What's an accordion?
+              </button>
+              <div class="accordion-content">
+                An accordion is a user interface design pattern in which content
+                gets divided into sections, with each section collapsed behind a
+                label or heading. When a user clicks or taps on the label, the
+                corresponding section expands to display its content.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-indicator">+</span>
+                What if the user clicks on a collapsed card while another card
+                is open?
+              </button>
+              <div class="accordion-content">
+                In many accordion designs, if a user clicks on a collapsed card
+                while another is open, the currently open card will collapse,
+                and the clicked card will expand to show its content. This
+                behavior ensures the interface remains clean, with only one
+                section or card open at a given time.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span class="accordion-indicator">+</span>
+                How to choose an icon to indicate expansion?
+              </button>
+              <div class="accordion-content">
+                Choosing an appropriate icon to signal expansion in an accordion
+                involves selecting a symbol that users intuitively recognize as
+                an action indicator. Common choices include a + sign for
+                collapsed sections and a - sign for expanded ones.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
