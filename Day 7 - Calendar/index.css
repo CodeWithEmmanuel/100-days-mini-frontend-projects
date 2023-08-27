@@ -1,0 +1,223 @@
+body {
+  background-color: azure;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Noto Serif", serif;
+}
+.container {
+  height: 800px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar-content {
+  background-color: #374140;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-content {
+  background-color: #ec7363;
+  height: 75%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85%;
+  width: 85%;
+  color: white;
+  margin-top: 50px;
+}
+.year-line {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  align-items: center;
+  color: #919294;
+}
+.current-month {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.days-line {
+  display: flex;
+  width: 330px;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 0.83rem;
+  color: #b1a490;
+  text-align: center;
+}
+
+table {
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  height: 230px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin-top: 20px;
+}
+
+.event-date {
+  border-radius: 100%;
+  border: 0.5px solid #fcbf7e;
+}
+
+.current-event-date {
+  background-color: #fcbf7e;
+  color: #374140;
+  border-radius: 100%;
+}
+
+.months-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 105%;
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+.left-arrow-icon,
+.right-arrow-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(99%) sepia(2%) saturate(2759%) hue-rotate(173deg)
+    brightness(116%) contrast(100%);
+}
+.event-heading {
+  background-color: #fcbf7e;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #494e3b;
+  width: 100%;
+}
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid rgba(217, 84, 69, 0.7);
+}
+.event-item-last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+  align-items: center;
+  height: 80px;
+}
+.event-icon {
+  width: 50px;
+  margin-right: 8px;
+}
+.event-icon-image {
+  width: 35px;
+  height: 35px;
+  float: right;
+  filter: invert(99%) sepia(23%) saturate(1648%) hue-rotate(333deg)
+    brightness(104%) contrast(104%);
+}
+.event-description {
+  flex: 1;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.event-description h2 {
+  color: #fedfb0;
+  font-size: 1.15rem;
+  margin-bottom: 0px;
+}
+.event-description p {
+  color: #494e3b;
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+.icons-event {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+}
+.icons-event-image,
+.icons-event-image {
+  width: 25px;
+  height: 25px;
+  filter: invert(30%) sepia(6%) saturate(1489%) hue-rotate(35deg)
+    brightness(91%) contrast(91%);
+}
+button {
+  background-color: #374140;
+  border: none;
+  width: 180px;
+  height: 50px;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  margin-top: 95px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  border: 1px solid #374140;
+  color: #374140;
+  background-color: #fedfb0;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 20px auto;
+    gap: 20px;
+    justify-content: center;
+    min-height: 1100px;
+  }
+  .calendar-content {
+    width: 90%;
+    border-radius: 8px;
+  }
+
+  .event-content {
+    width: 90%;
+    border-radius: 8px;
+  }
+
+  .event-heading {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
