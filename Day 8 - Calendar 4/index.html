@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calendar">
+        <div class="calendar-head">
+          <div class="left-arrow">
+            <img
+              class="left-arrow-icon"
+              src="Images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg"
+            />
+          </div>
+          <div class="month-year">FEBRUARY, 2017</div>
+          <div class="right-arrow">
+            <img
+              class="right-arrow-icon"
+              src="Images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg"
+            />
+          </div>
+        </div>
+        <div class="calendar-body">
+          <table>
+            <tr>
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td class="mark-date">4</td>
+            </tr>
+
+            <tr>
+              <td class="mark-date">5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td class="current-date">9</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+
+            <tr>
+              <td>12</td>
+              <td>13</td>
+              <td class="mark-date">14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+
+            <tr>
+              <td>19</td>
+              <td class="mark-date">20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+            </tr>
+
+            <tr>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="events">
+        <div class="events-top">
+          THURSDAY
+          <p>Feb 9</p>
+        </div>
+        <div class="events-middle">
+          <img
+            class="calendar-icon"
+            src="Images/edit_calendar_FILL0_wght400_GRAD0_opsz48.svg"
+          />
+          <p>No events for this day</p>
+        </div>
+        <div class="events-bottom">
+          <button>ADD EVENT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
