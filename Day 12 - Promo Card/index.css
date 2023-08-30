@@ -1,0 +1,97 @@
+html {
+  font-family: "Merriweather", serif;
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  background-color: #fffafe;
+  place-items: center;
+  display: grid;
+}
+
+.container {
+  width: 900px;
+  height: 560px;
+  background-image: url(images/background.png);
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 5px #c3c0c3;
+  position: relative;
+}
+
+.gradient {
+  width: 900px;
+  height: 560px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #e76744d3, #e7674417);
+}
+
+.gradient div {
+  width: 900px;
+  height: 560px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top right, #e76744d3, #e7674417);
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  width: 90px;
+  justify-content: space-between;
+  align-items: center;
+  left: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  top: 120px;
+  text-align: center;
+}
+
+.content div {
+  display: grid;
+  place-items: center;
+  width: 500px;
+  margin: auto;
+}
+
+.content h1 {
+  font-family: "Playball", cursive;
+  font-size: 6.5rem;
+  margin: 0;
+  color: white;
+}
+
+.content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  background-color: white;
+  color: #ee481ab5;
+  border: none;
+  width: 200px;
+  font-size: 1.7rem;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 30px 3px #de4d25b5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  width: 210;
+  padding: 17px;
+}
