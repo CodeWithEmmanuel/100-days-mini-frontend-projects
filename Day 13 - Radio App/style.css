@@ -1,0 +1,211 @@
+html {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  background-color: #1b1537;
+  background-image: radial-gradient(#281c4e, #211842, #171130);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 410px;
+  height: 690px;
+  background-image: linear-gradient(to top right, #281d4c, #412a7f);
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px 5px #171130d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 1.4rem;
+}
+
+.header img {
+  filter: invert(49%) sepia(6%) saturate(3477%) hue-rotate(214deg)
+    brightness(87%) contrast(85%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header img:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.footer {
+  background-color: #171130;
+  padding: 15px 10px 0px 10px;
+}
+
+.stations-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #aeabc8;
+  margin-left: 20px;
+}
+
+.radio-stations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.radio-stations div {
+  background-color: #412a7fe6;
+  width: 125px;
+  height: 95px;
+  display: grid;
+  place-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.radio-stations div:hover {
+  width: 130px;
+  height: 100px;
+}
+.radio-stations h2 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.radio-stations p {
+  font-size: 1.6rem;
+  margin: -3px;
+  color: #e6e4ee;
+}
+
+.body {
+  margin-bottom: 15px;
+  border-top: 0.9px solid #241949;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.radio-display {
+  margin-top: 32px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.station-name {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.station-display {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
+  margin: 15px;
+}
+
+.station-display img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+  filter: invert(6%) sepia(51%) saturate(1680%) hue-rotate(232deg)
+    brightness(94%) contrast(98%);
+}
+
+.station-display img:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.main-station-display {
+  background-color: #493b73cc;
+  width: 130px;
+  height: 130px;
+  border-radius: 70px;
+  border: 0.9px solid #aaa8bf;
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.station-number h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #bab5c8;
+}
+
+.station-number p {
+  text-align: center;
+  font-size: 1.35rem;
+  margin-top: -8px;
+  color: #8469d4;
+}
+
+.radio-dial {
+  background-color: #171130;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.frequencies img {
+  height: 40px;
+  width: 350px;
+  margin-top: 5px;
+  filter: invert(33%) sepia(36%) saturate(554%) hue-rotate(212deg)
+    brightness(94%) contrast(88%);
+}
+
+.line {
+  height: 1.5px;
+  width: 90%;
+  background-color: #504b60;
+  position: relative;
+}
+
+.knob {
+  height: 15px;
+  width: 15px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  position: absolute;
+  top: -7px;
+  left: 130px;
+}
+
+.numbers-station {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #edebf1;
+}
