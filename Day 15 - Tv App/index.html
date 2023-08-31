@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="sidebar" class="sidebar">
+        <div>
+          <h2>MOVIES</h2>
+          <p>18 Channels</p>
+        </div>
+
+        <div>
+          <h2>MUSIC</h2>
+          <p>9 Channels</p>
+        </div>
+
+        <div class="current-tab">
+          <h2>SERIES</h2>
+          <p>6 Channels</p>
+        </div>
+
+        <div>
+          <h2>LIVE</h2>
+          <p>16 Channels</p>
+        </div>
+
+        <div>
+          <h2>SCIENCE</h2>
+          <p>11 Channels</p>
+        </div>
+
+        <div>
+          <h2>SPORTS</h2>
+          <p>6 Channels</p>
+        </div>
+
+        <div>
+          <h2>NEWS</h2>
+          <p>14 Channels</p>
+        </div>
+
+        <div>
+          <h2>KIDS</h2>
+          <p>9 Channels</p>
+        </div>
+
+        <div>
+          <h2>LIFESTYLE</h2>
+          <p>6 Channels</p>
+        </div>
+
+        <div class="current-tab-indicator"></div>
+      </div>
+      <div id="content" class="content">
+        <div class="header">
+          <div class="menu">
+            <div class="top-menu">
+              <div class="current-menu">NOW</div>
+              <div>COMMING UP</div>
+              <div>TONIGHT</div>
+              <div>TODAY</div>
+            </div>
+            <div class="sub-menu">
+              <div class="current-sub-menu">Popular</div>
+              <div>New</div>
+              <div>Highest Rated</div>
+            </div>
+          </div>
+          <div class="hamburger">
+            <img
+              id="menu-icon"
+              src="Images/menu_FILL0_wght400_GRAD0_opsz48.svg"
+            />
+          </div>
+        </div>
+        <div class="movies">
+          <div class="movie-details">
+            <img src="Images/Vikings.png" />
+            <h2>VIKINGS</h2>
+            <div class="episode-time">
+              <p>Portage S4, Ep8</p>
+              <p>28 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="35"
+            ></progress>
+          </div>
+
+          <div class="movie-details">
+            <img src="Images/Game of Thrones.png" />
+            <h2>GAME OF THRONES</h2>
+            <div class="episode-time">
+              <p>The Red Woman S6, Ep1</p>
+              <p>13 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="75"
+            ></progress>
+          </div>
+
+          <div class="movie-details">
+            <img src="Images/The Big Bang Theory.png" />
+            <h2>THE BIG BANG THEORY</h2>
+            <div class="episode-time">
+              <p>The Viewing Party S9, Ep12</p>
+              <p>5 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="90"
+            ></progress>
+          </div>
+
+          <div class="movie-details">
+            <img src="Images/Orange is the new black.png" />
+            <h2>ORANGE IS THE NEW ...</h2>
+            <div class="episode-time">
+              <p>Trust no bitch S3, Ep13</p>
+              <p>12 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="80"
+            ></progress>
+          </div>
+
+          <div class="movie-details">
+            <img src="Images/Mr Robot.png" />
+            <h2>MR. ROBOT</h2>
+            <div class="episode-time">
+              <p>W1ter0se S1, Ep6</p>
+              <p>38 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="60"
+            ></progress>
+          </div>
+
+          <div class="movie-details">
+            <img src="Images/Modern Family.png" />
+            <h2>MODERN FAMILY</h2>
+            <div class="episode-time">
+              <p>Phil on wire S3, Ep2</p>
+              <p>5 min. left</p>
+            </div>
+            <progress
+              class="watch-time"
+              min="0"
+              max="100"
+              value="95"
+            ></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
