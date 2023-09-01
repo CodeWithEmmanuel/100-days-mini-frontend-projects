@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #32254e;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 420px;
+  height: 520px;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 65px 1fr 65px;
+  box-shadow: 2px 2px 15px 5px #271a44db;
+  position: relative;
+}
+
+.main {
+  background-color: #332650;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.header,
+.footer {
+  background-color: #433165;
+  display: flex;
+}
+
+.header {
+  color: #afa1ca;
+  align-items: center;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.footer {
+  color: #eb217c;
+  font-weight: 600;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account {
+  display: flex;
+  cursor: pointer;
+  align-items: start;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-right: 18px;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.account-image img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.account-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-details h3 {
+  color: white;
+}
+
+.account-details p {
+  color: #a199b0;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.account-details span {
+  color: #eb217c;
+  font-weight: 600;
+}
+
+#notification-time {
+  font-size: 0.9rem;
+  color: #ab9ad1;
+}
+
+.new-tag {
+  background-color: #558fe0;
+  padding: 3px 3px;
+  border-radius: 15px;
+  color: white;
+  width: 35px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#comment {
+  color: #eb217c;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.notification-icon {
+  position: absolute;
+  right: 5px;
+  top: -70px;
+  border: 1px solid #eb217c;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #2b1d48;
+}
+
+.notification-icon img {
+  height: 40px;
+  width: 40px;
+  filter: invert(86%) sepia(71%) saturate(3001%) hue-rotate(319deg)
+    brightness(108%) contrast(99%);
+}
