@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="menu">
+          <div>HOME</div>
+          <div>ABOUT</div>
+          <div>WORKS</div>
+          <div>SUPPORT</div>
+          <div>CONTACT</div>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Search"
+          />
+          <label for="search-bar" class="search-icon">
+            <img src="images/search_FILL0_wght400_GRAD0_opsz48.svg" />
+          </label>
+        </div>
+      </div>
+      <div class="optin">
+        <div class="account-picture">
+          <h2>Aliquam etiam</h2>
+          <p>nulla, metus mattis mollis pulvinar sapien amet sit eget.</p>
+        </div>
+        <div class="optin-form">
+          <div class="form-heading">SIGN IN</div>
+          <div class="form-imput">
+            <form>
+              <div class="email-address">
+                <img src="images/mail_FILL0_wght400_GRAD0_opsz48.svg" />
+                <input
+                  type="email"
+                  name="email-address"
+                  id="email-address"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="password">
+                <img src="images/lock_FILL0_wght400_GRAD0_opsz48.svg" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="check-box">
+                <input
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                  required
+                />
+                <label for="remember-me" class="remember-me">Remember Me</label>
+              </div>
+              <div class="form-button">
+                <button>Sign In</button>
+                <div class="form-options">
+                  <p>Create Account</p>
+                  <p>Forgot password?</p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="connect">or connect with</div>
+          <div class="login-buttons">
+            <div>
+              <button id="facebook-btn">Facebook</button>
+            </div>
+            <div>
+              <button id="gmail-btn">Gmail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calendar">
+        <div class="calendar-head">
+          <div class="current-date">
+            <h2>3</h2>
+            <p>FRIDAY</p>
+          </div>
+          <div class="current-month">
+            <img src="images/chevron_left_FILL0_wght400_GRAD0_opsz48.svg" />
+            <p>March 2017</p>
+            <img src="images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" />
+          </div>
+        </div>
+        <div class="calendar-body">
+          <table>
+            <tr>
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            </tr>
+            <tr>
+              <td class="not-current-month">28</td>
+              <td class="not-current-month">27</td>
+              <td class="not-current-month">28</td>
+              <td>1</td>
+              <td>2</td>
+              <td class="today">3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td class="not-current-month">1</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile-info">
+          <div>
+            <img src="images/picture 2.png" />
+          </div>
+          <div>
+            <h2>John C. Manley</h2>
+            <p>UK, London</p>
+          </div>
+        </div>
+        <div class="profile-metrics">
+          <div>
+            <h2>14586</h2>
+            <p>Followers</p>
+          </div>
+          <div>
+            <h2>9753</h2>
+            <p>Following</p>
+          </div>
+          <div>
+            <h2>547</h2>
+            <p>Photos</p>
+          </div>
+        </div>
+        <div class="profile-btn">
+          <button>Follow</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-head">
+          <h2>Gallery</h2>
+          <p>#loremtag</p>
+        </div>
+        <div class="gallery-items">
+          <img src="images/1.png" />
+          <img src="images/2.png" />
+          <img src="images/3.png" />
+          <img src="images/1.png" />
+          <img src="images/2.png" />
+          <img src="images/3.png" />
+          <img src="images/1.png" />
+          <img src="images/2.png" />
+          <img src="images/3.png" />
+          <img src="images/1.png" />
+          <img src="images/2.png" />
+          <img src="images/3.png" />
+          <img src="images/1.png" />
+          <img src="images/2.png" />
+          <img src="images/3.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
