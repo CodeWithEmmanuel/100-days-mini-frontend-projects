@@ -1,0 +1,198 @@
+html {
+  font-family: "Merriweather", serif;
+  font-size: 62.5%;
+  color: #eaeaf2;
+  background-color: #8283ff;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 800px;
+  height: 350px;
+  background-color: #1b1b3d;
+  padding: 25px 0px 10px 0px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #101030;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.packages {
+  display: flex;
+  margin-top: 25px;
+}
+
+.email-distribution,
+.analytics {
+  width: 30%;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px #101030;
+}
+
+.email-distribution h3,
+.analytics h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.email-distribution h2,
+.analytics h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.email-distribution p,
+.analytics p {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #5a5a6f;
+}
+
+.email-distribution ul {
+  line-height: 2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.email-distribution button,
+.analytics button {
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.analytics div {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+button {
+  color: #eaeaf2;
+  padding: 7px 15px;
+  border: none;
+  background-image: linear-gradient(to right, #ff547c, #ff8e7d);
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.upsells {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-shadow: 0px 0px 2px #101030;
+  justify-content: space-evenly;
+}
+
+.upsell-item,
+.best-upsell-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0px 0px 2px #101030;
+  padding-left: 20px;
+  padding-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.upsell-item p,
+.best-upsell-item p {
+  width: 120px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.upsell-item div,
+.best-upsell-item div {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.upsell-item span,
+.best-upsell-item span {
+  color: #5a5a6f;
+  font-size: 1rem;
+}
+
+.upsell-item button,
+.best-upsell-item button {
+  width: 90px;
+  padding: 7px 11px;
+}
+
+.best-value {
+  position: absolute;
+  background-image: linear-gradient(to right, #ff547c, #ff8e7d);
+  top: 0px;
+  width: 30px;
+  height: 15px;
+  padding-left: 3px;
+  left: 0px;
+  border-bottom-right-radius: 5px;
+}
+
+.best-value p {
+  font-size: 0.5rem;
+}
+
+#upsell-description {
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 100vw;
+  }
+  .container {
+    width: 380px;
+    height: 1020px;
+    border-radius: 10px;
+  }
+
+  .packages {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .email-distribution,
+  .analytics {
+    width: 90%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  .upsells {
+    width: 90%;
+    margin: auto;
+  }
+}
