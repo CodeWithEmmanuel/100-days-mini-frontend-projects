@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="top-area">
+        <div class="close-icon">
+          <img src="images/close_FILL0_wght400_GRAD0_opsz48.svg" />
+        </div>
+        <div class="head-text">Check In</div>
+        <div class="search-bar">
+          <img src="images/search_FILL0_wght400_GRAD0_opsz48.svg" />
+          <input
+            type="text"
+            class="search-box"
+            name="search-box"
+            placeholder="Search Location"
+          />
+        </div>
+      </div>
+      <div class="middle-area">
+        <div>
+          <img src="images/map.png" />
+        </div>
+        <div>
+          <h2>See places near you</h2>
+        </div>
+        <div>
+          <p>
+            You have turned off your location. To see a list of places near you,
+            allow us to access your location while you use your app.
+          </p>
+        </div>
+      </div>
+      <div class="bottom-area">
+        <button>Turn on location</button>
+      </div>
+
+      <div class="toggle">
+        <input type="radio" id="light-mode" name="mode-toggle" checked />
+        <label for="light-mode">Light Mode</label>
+        <input type="radio" id="dark-mode" name="mode-toggle" />
+        <label for="dark-mode">Dark Mode</label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
