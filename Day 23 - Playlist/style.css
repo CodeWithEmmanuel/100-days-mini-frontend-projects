@@ -1,0 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  color: #3b4040;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #2564df;
+  background-image: linear-gradient(to right, #2564df, #7314fb);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 370px;
+  height: 600px;
+  background-color: #ffffff;
+  margin: 0px auto;
+  padding: 20px 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  border-radius: 15px;
+}
+
+.heading {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.heading h2 {
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 1.1;
+}
+
+.heading div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading p {
+  color: #2564df;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.heading img {
+  cursor: pointer;
+  filter: invert(28%) sepia(97%) saturate(2313%) hue-rotate(214deg)
+    brightness(91%) contrast(91%);
+}
+.playlist {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.music-box,
+.music-box-content {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.music-box-content {
+  height: 100%;
+}
+
+.music-thumbnail img {
+  width: 125px;
+  height: 75px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 10px #2563df84;
+  object-fit: cover;
+}
+
+.music-thumbnail {
+  position: relative;
+  width: 135px;
+  height: 80%;
+}
+
+.duration {
+  position: absolute;
+  background-color: #ffffffdb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 7px;
+  border-radius: 30px;
+  left: 5px;
+  bottom: 7px;
+}
+
+.music-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 80%;
+}
+
+.music-details h2 {
+  font-size: 1.3rem;
+}
+.music-details p {
+  color: #2564df;
+  font-weight: 600;
+}
+
+.music-box-content:hover {
+  color: white;
+  background-color: #2564df;
+  background-image: linear-gradient(to right, #0090d2, #01b7e2);
+  position: absolute;
+  width: 105%;
+  height: 100%;
+  align-self: center;
+  border-radius: 5px;
+  left: -20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.music-box-content:hover p {
+  color: white;
+}
+
+.music-box-content:hover .duration {
+  color: #2564df;
+}
