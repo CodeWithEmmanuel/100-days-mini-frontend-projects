@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div class="step-icon">
+          <span>
+            <img src="images/person_FILL0_wght400_GRAD0_opsz24.svg" />
+          </span>
+          <p>Create account</p>
+        </div>
+        <div class="horizotal-line"></div>
+        <div class="step-icon">
+          <span>
+            <img src="images/interests_FILL0_wght400_GRAD0_opsz24.svg" />
+          </span>
+          <p>Set your Iinterests</p>
+        </div>
+        <div class="horizotal-line"></div>
+        <div class="step-icon">
+          <span class="last-step">
+            <img src="images/diversity_3_FILL0_wght400_GRAD0_opsz24.svg" />
+          </span>
+          <p>Customize your Profile</p>
+        </div>
+      </div>
+      <div id="body-choose-your-interests">
+        <h2 id="step-heading">Choose your interests</h2>
+        <div id="interests-content">
+          <label>
+            <div>
+              <img src="images/Fitness.png" />
+            </div>
+            <span>
+              <h2>FITNESS</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/Design.png" />
+            </div>
+            <span>
+              <h2>DESIGN</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/Education.png" />
+            </div>
+            <span>
+              <h2>EDUCATION</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/DIYCrafts.png" />
+            </div>
+            <span>
+              <h2>DIY CRAFTS</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/Home.png" />
+            </div>
+            <span>
+              <h2>HOME</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/fooddrink.png" />
+            </div>
+            <span>
+              <h2>FOOD&amp;DRINK</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/hair&beauty.png" />
+            </div>
+            <span>
+              <h2>HAIR&amp;BEAUTY</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/Gardening.png" />
+            </div>
+            <span>
+              <h2>GARDENING</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/Cars.png" />
+            </div>
+            <span>
+              <h2>CARS</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+
+          <label>
+            <div>
+              <img src="images/travel.png" />
+            </div>
+            <span>
+              <h2>TRAVEL</h2>
+              <input type="checkbox" class="checkbox" />
+            </span>
+          </label>
+        </div>
+        <div id="account-content">
+          <div class="form-box">
+            <form class="form">
+              <span class="title">Sign up</span>
+              <span class="subtitle"
+                >Create a free account with your email.</span
+              >
+              <div class="form-container">
+                <input type="text" class="input" placeholder="Full Name" />
+                <input type="email" class="input" placeholder="Email" />
+                <input type="password" class="input" placeholder="Password" />
+              </div>
+              <button>Sign up</button>
+            </form>
+            <div class="form-section">
+              <p>Have an account? <a href="">Log in</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="Profile-content">
+          <div class="profile-container">
+            <form class="form" action="#">
+              <div class="input-box">
+                <label>Full Name</label>
+                <input required="" placeholder="Enter full name" type="text" />
+              </div>
+              <div class="column">
+                <div class="input-box">
+                  <label>Phone Number</label>
+                  <input
+                    required=""
+                    placeholder="Enter phone number"
+                    type="telephone"
+                  />
+                </div>
+                <div class="input-box">
+                  <label>Birth Date</label>
+                  <input
+                    required=""
+                    placeholder="Enter birth date"
+                    type="date"
+                  />
+                </div>
+              </div>
+              <div class="gender-box">
+                <label>Gender</label>
+                <div class="gender-option">
+                  <div class="gender">
+                    <input
+                      checked=""
+                      name="gender"
+                      id="check-male"
+                      type="radio"
+                    />
+                    <label for="check-male">Male</label>
+                  </div>
+                  <div class="gender">
+                    <input name="gender" id="check-female" type="radio" />
+                    <label for="check-female">Female</label>
+                  </div>
+                  <div class="gender">
+                    <input name="gender" id="check-other" type="radio" />
+                    <label for="check-other">Prefer not to say</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-box address">
+                <label>Address</label>
+                <input
+                  required=""
+                  placeholder="Enter street address"
+                  type="text"
+                />
+                <div class="column">
+                  <div class="select-box">
+                    <select>
+                      <option hidden="">Country</option>
+                      <option>USA</option>
+                      <option>UK</option>
+                      <option>Germany</option>
+                      <option>Japan</option>
+                    </select>
+                  </div>
+                  <input
+                    required=""
+                    placeholder="Enter your city"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="steps-btn">
+          <button id="back-btn">
+            <img src="images/arrow_back_FILL0_wght400_GRAD0_opsz24.svg" />
+            Previous
+          </button>
+          <button id="next-btn">
+            Next<img
+              src="images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

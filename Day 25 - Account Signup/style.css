@@ -1,0 +1,353 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(to right, #8aa4fe, #85acff, #af5afe);
+  background-color: #8aa4fe;
+}
+
+.container {
+  width: 850px;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+}
+
+.heading {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.step-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.step-icon img {
+  width: 35px;
+  filter: invert(36%) sepia(44%) saturate(402%) hue-rotate(185deg)
+    brightness(98%) contrast(86%);
+}
+
+.step-icon span {
+  background-image: linear-gradient(to right, #ffec8f, #fdce75);
+  background-color: #fdce75;
+  height: 45px;
+  width: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  border: 2px solid #8794ff;
+}
+
+.step-icon:last-child span {
+  background-color: #af5afe;
+  background-image: none;
+}
+
+.horizotal-line {
+  height: 2px;
+  width: 20%;
+  background-color: #af5afe;
+  margin-bottom: 25px;
+}
+
+#body-choose-your-interests {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 45px 0px;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+#interests-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  font-size: 1.1rem;
+  row-gap: 30px;
+  /* display: none; */
+}
+#step-heading {
+  /* display: none; */
+}
+#account-content {
+  margin: auto;
+  display: none;
+}
+
+#Profile-content {
+  margin: 20px auto;
+  display: none;
+}
+
+#interests-content span {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#interests-content img {
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+}
+
+#interests-content label {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 150px;
+}
+
+.steps-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.steps-btn button {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid #af5afe;
+  padding: 5px 10px;
+  color: #af5afe;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.25s;
+  background-color: transparent;
+}
+
+.steps-btn img {
+  filter: invert(40%) sepia(31%) saturate(3070%) hue-rotate(243deg)
+    brightness(101%) contrast(99%);
+}
+
+.steps-btn button:hover {
+  padding: 6px 13px;
+}
+
+.form-box {
+  max-width: 300px;
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 0.5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+}
+
+.form-section {
+  padding: 16px;
+  font-size: 0.85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color 0.3s ease;
+}
+
+.form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
+}
+
+.profile-container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #fcedda;
+  padding: 25px;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container header {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-container .form {
+  margin-top: 15px;
+}
+
+.profile-container .form .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+
+.profile-container .form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #ee4e34;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #fcedda;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profile-container .form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.profile-container .form .gender-box {
+  margin-top: 10px;
+}
+
+.profile-container .form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.profile-container .form .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  accent-color: #ee4e34;
+}
+
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+
+.gender label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #fcedda;
+}
+
+.profile-container .form button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #ee4e34;
+}
+
+.profile-container .form button:hover {
+  background: #ee3e34;
+}
