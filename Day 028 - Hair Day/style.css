@@ -1,0 +1,240 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff4ee;
+  padding: 20px 30px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 70px 820px 100px;
+  gap: 15px;
+}
+
+header {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 500px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+header img:hover {
+  width: 550px;
+}
+
+nav {
+  background-color: #590000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav li:hover {
+  font-size: 1.35rem;
+  color: #d0604c;
+}
+main {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.promotional-banner {
+  height: 300px;
+  width: 100%;
+  background-image: url(images/hair\ day3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px #f3d8c2;
+}
+
+.promotional-banner h2 {
+  margin: 60px 0px 0px 50px;
+  color: #590000;
+  font-size: 3rem;
+}
+
+.promotional-banner p {
+  width: 450px;
+  margin: 10px 0px 0px 50px;
+  color: #590000;
+}
+
+.promotional-banner button {
+  color: white;
+  background-color: #590000;
+  margin: 20px 0px 0px 50px;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.promotional-banner button:hover {
+  padding: 18px 53px;
+  color: #d0604c;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 400px;
+}
+
+.content article {
+  flex: 1;
+  text-align: center;
+  padding: 30px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222222;
+  height: 100%;
+  gap: 20px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #590000;
+  font-weight: 700;
+}
+
+.content p {
+  line-height: 1.5;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.content span {
+  color: #590000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.content span:hover {
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #590000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 5px 30px;
+  font-size: 1.2rem;
+}
+
+footer img {
+  width: 60px;
+  cursor: pointer;
+}
+img {
+  width: 100px;
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    width: 95%;
+    padding: 20px 20px;
+    grid-template-rows: 100px 70px 1800px 70px;
+  }
+
+  nav ul {
+    font-size: 1rem;
+    gap: 30px;
+  }
+  header img {
+    width: 300px;
+  }
+
+  .promotional-banner {
+    text-align: center;
+  }
+  .promotional-banner h2 {
+    font-size: 2.5rem;
+  }
+
+  .promotional-banner p {
+    text-align: center;
+    width: auto;
+    margin: 20px 5px 5px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1100px) {
+  body {
+    width: 95%;
+    padding: 20px 20px;
+    grid-template-rows: 100px 70px 2300px 70px;
+  }
+
+  nav ul {
+    font-size: 1rem;
+    gap: 30px;
+  }
+  header img {
+    width: 300px;
+  }
+
+  .promotional-banner {
+    text-align: center;
+  }
+  .promotional-banner h2 {
+    font-size: 2.5rem;
+  }
+
+  .promotional-banner p {
+    text-align: center;
+    width: auto;
+    margin: 20px 5px 5px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 200px;
+  }
+}
