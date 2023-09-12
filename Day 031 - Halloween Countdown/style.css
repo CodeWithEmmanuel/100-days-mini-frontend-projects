@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 62.5%;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  min-height: 80vh;
+  background-color: #0e1024;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  border: 1px solid #fff;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+  min-height: 60vh;
+  box-shadow: 2px 2px 20px #030f39;
+  background-image: url(images/halloween-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+.counter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.counter h2 {
+  font-size: 4em;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.counter p {
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+.counter div {
+  background-color: #ffffff0f;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 950px;
+    background-size: 100% 100%;
+  }
+
+  .container p {
+    font-size: 1.3em;
+  }
+
+  .header h2 {
+    font-size: 3em;
+  }
+  .counter {
+    width: 80%;
+  }
+}
