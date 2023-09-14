@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  color: #151515;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Welcome to Age Calculator</h2>
+        <p>Enter your Date of Birth:</p>
+      </div>
+      <div class="date-of-birth">
+        <form>
+          <input type="date" id="date-of-birth" name="date-of-birth" required />
+          <button id="submit-btn">Check Age</button>
+        </form>
+      </div>
+      <div class="age-output">
+        <h3>You are:</h3>
+        <h2><span id="years">00</span> years</h2>
+        <h2><span id="months">00</span> months</h2>
+        <h2>and <span id="days">00</span> days old</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
