@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #20ca8c;
+}
+
+.phone {
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.screen input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.dial-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.num {
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.num:hover {
+  background-color: #ccc;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.controls button {
+  font-size: 1.5em;
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #ccc;
+}
+
+#phone-number {
+  text-align: center;
+}
