@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b6b9a0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  color: #696c6d;
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+}
+
+.pricing-card {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  min-height: 30em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pricing-header {
+  background-color: #696c6d;
+  color: #ffffff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 50px;
+  margin-top: -35px;
+  display: grid;
+  place-items: center;
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+
+.plan-name {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 1.2em;
+}
+
+.price span {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9em;
+}
+
+.features p {
+  opacity: 0.7;
+  margin-top: 3px;
+}
+
+.not-available {
+  opacity: 0.5;
+}
+
+.select-button {
+  background-color: #d0f731;
+  color: #696c6d;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.select-button:hover {
+  transform: scale(1.2);
+}
+.first-header {
+  color: #cdf931;
+}
+
+.first-button {
+  background-color: #cdf931;
+}
+
+.second-header {
+  color: #01ffc7;
+}
+
+.second-button {
+  background-color: #01ffc7;
+}
+
+.third-header {
+  color: #30e1fe;
+}
+
+.third-button {
+  background-color: #30e1fe;
+}
+
+@media (min-width: 768px) {
+  .pricing-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-card {
+    flex: 1;
+    max-width: 20em;
+  }
+}
