@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Retro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="settings-settings">Settings</div>
+        <div class="toggle-settings">
+          <div class="settings-settings-options">
+            <p>Airplane Mode</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="settings-settings-options">
+            <p>WI-FI</p>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="settings-settings-options">
+            <p>Bluetooth</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="settings-settings-options">
+            <p>Notifications</p>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-settings more-settings">
+          Software Update
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          General Settings
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          Apps
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          Storage
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          Data Usage
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          Security
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+
+        <div class="settings-settings more-settings">
+          Other Settings
+          <img
+            class="closed-settings-icon"
+            src="images/arrow_forward_ios_FILL0_wght700_GRAD0_opsz48.svg"
+          />
+
+          <img
+            class="opened-settings-icon"
+            src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+          />
+        </div>
+      </div>
+      <div class="content">
+        <div class="general-settings">
+          <div class="display-and-brightness">
+            <div class="header">Display & Brighness</div>
+            <div class="settings-content">
+              <div class="settings-content-item">
+                <p>Brightness</p>
+                <input type="range" min="0" max="100" step="1" value="30" />
+              </div>
+
+              <div class="settings-content-item">
+                <p>Auto Brightness</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="settings-content-item">
+                <p>Text Style</p>
+
+                <img
+                  class="opened-settings-icon"
+                  src="images/keyboard_arrow_down_FILL0_wght400_GRAD0_opsz24.svg"
+                />
+              </div>
+
+              <div class="settings-content-item">
+                <p>Bold Text</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="sound"></div>
+          <div class="buttons">
+            <button>Save</button>
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
