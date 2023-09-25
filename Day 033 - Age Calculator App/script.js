@@ -1,3 +1,5 @@
+"use strict";
+
 const dateOfBirth = document.getElementById("date-of-birth");
 const checkAgeBtn = document.getElementById("submit-btn");
 const yearsEl = document.getElementById("years");
