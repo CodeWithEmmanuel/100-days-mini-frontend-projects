@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #047288;
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  place-items: center;
+  color: #fff;
+}
+
+.container {
+  width: 450px;
+  height: 750px;
+  box-shadow: 2px 2px 60px 5px rgba(57, 57, 57, 0.497);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 1fr 1fr 80px;
+  background-color: #058ca3;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.date h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.date p,
+.details p {
+  opacity: 0.6;
+}
+
+.data {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(57, 57, 57, 0.497);
+  color: #474747;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.measurement {
+  border: 5px solid #c43772;
+  height: 140px;
+  width: 140px;
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+  font-size: 1.4em;
+}
+
+.measurement h2,
+.measurement p {
+  font-weight: 100;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.activities-header h2 {
+  font-weight: 100;
+}
+
+.activities-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.activities-stats img {
+  filter: invert(100%);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  background-color: #fff;
+}
+
+.menu img {
+  width: 35px;
+  cursor: pointer;
+  filter: invert(30%) sepia(41%) saturate(2043%) hue-rotate(157deg)
+    brightness(96%) contrast(97%);
+  transition: all 0.3s;
+}
+
+.menu img:hover,
+.menu button:hover {
+  transform: scale(1.2);
+}
+
+.menu button {
+  background-image: linear-gradient(to right, #f93e79, #c43772);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 40px;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 1.5em;
+  box-shadow: 1px 1px 5px #f93e79cf;
+  transition: all 0.3s;
+}
