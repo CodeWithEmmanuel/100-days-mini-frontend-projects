@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #2d2e40;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #36394a;
+  width: 380px;
+  min-height: 350px;
+  border-radius: 2px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.7rem;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-header p {
+  cursor: pointer;
+}
+
+.container-header p:hover {
+  text-decoration: underline;
+}
+
+.container-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120%;
+  gap: 10px;
+  cursor: pointer;
+  min-height: 50px;
+  padding: 0px 30px;
+  transition: all 0.3s;
+}
+
+.container-content:hover {
+  background-color: #2d2e40;
+}
+
+.container-content:active {
+  opacity: 0.6;
+}
+
+.container-content h2 {
+  font-weight: 100;
+}
+
+.container-content p {
+  opacity: 0.7;
+  margin: 3px;
+}
+
+.tag {
+  background-color: #51e1bf;
+  color: #2d2e40;
+  padding: 3px 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.closed {
+  background-color: #e48051;
+}
+
+.vote-container {
+  background-color: #36394a;
+  width: 350px;
+  min-height: 250px;
+  border-radius: 2px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.vote-container div {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.vote-container button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #7e96ff, #c194fb);
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.vote-container button:hover {
+  transform: scale(1.1);
+}
+
+.vote-container button:active {
+  opacity: 0.6;
+}
+
+/* When a challenge is clicked add this class to container */
+
+/* add this class to container */
+.challenge-vote {
+  display: none;
+}
+
+/* remove this class from vote container */
+
+.all-challenges {
+  display: none;
+}
+
+/* When a view all link is clicked remove this class from container */
+
+.view-all {
+  overflow: hidden;
+  height: 350px;
+}
