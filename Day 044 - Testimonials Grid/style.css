@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cf7598;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80%;
+  min-height: 75%;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 30px #00000018;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85px 1fr;
+}
+
+.menu {
+  background-image: linear-gradient(to right, #a44797, #8d62b1);
+  color: #ffffff;
+  border-bottom: 1px solid #fae60e;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.menu-item:hover {
+  transform: scale(1.2);
+  font-weight: 500;
+  background-color: #973c89;
+}
+
+.content {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.review-item {
+  border: 1px solid #7580d0;
+  width: 400px;
+  height: 250px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 35px;
+  text-align: center;
+}
+
+.review-item:hover {
+  border: none;
+  box-shadow: 0.51px 0.51px 20px #7580d06c;
+}
+
+.review-item h2 {
+  color: #2337cd;
+  font-weight: 300;
+}
+
+.review-item button {
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #a44797, #8d62b1);
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.review-item button:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 18px;
+}
+
+.starred {
+  filter: invert(98%) sepia(73%) saturate(1382%) hue-rotate(334deg)
+    brightness(97%) contrast(104%);
+}
+
+.unstarred {
+  filter: invert(88%) sepia(0%) saturate(47%) hue-rotate(141deg)
+    brightness(102%) contrast(92%);
+}
