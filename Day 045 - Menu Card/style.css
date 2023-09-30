@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #eaf7f0;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: #e3e8e9;
+  background-image: url(images/forest\ fruit\ pie.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 680px;
+  box-shadow: 2px 2px 30px 5px #afd3cb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu img {
+  cursor: pointer;
+  width: 28px;
+  filter: invert(55%) sepia(0%) saturate(461%) hue-rotate(176deg)
+    brightness(86%) contrast(83%);
+  transition: all 0.3s;
+}
+
+.menu img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  background-color: #fff;
+  width: 320px;
+  min-height: 270px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card h2 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #676767;
+}
+
+.card button {
+  border: none;
+  background-color: #d02e41;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card button:hover {
+  transform: scaleX(1.2);
+}
+
+.stars {
+  display: flex;
+}
+
+.stars img {
+  width: 18px;
+  filter: invert(29%) sepia(28%) saturate(6630%) hue-rotate(336deg)
+    brightness(84%) contrast(92%);
+}
+
+.reviews h2 {
+  color: #d02e41;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.reviews p {
+  font-size: 0.7rem;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  animation: swipe 20s ease-in 0s infinite;
+}
+
+@keyframes swipe {
+  from {
+    transform: translateX(-330px);
+  }
+  to {
+    transform: translateX(340px);
+  }
+}
