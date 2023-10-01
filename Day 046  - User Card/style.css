@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: #ffffff;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0f1830;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background-color: #172240;
+  width: 400px;
+  min-height: 450px;
+  box-shadow: 1px 1px 5px #10182d48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  gap: 40px;
+}
+
+.profile-pic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: -40px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #d1dcf5;
+  gap: 20px;
+}
+
+.name h2 {
+  font-size: 2.3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.name p,
+.location p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location img {
+  width: 25px;
+  filter: invert(89%) sepia(3%) saturate(2147%) hue-rotate(190deg)
+    brightness(99%) contrast(94%);
+}
+
+.line {
+  width: 95%;
+  height: 1.5px;
+  background-color: #0f1830;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.follow p {
+  font-size: 1.5rem;
+}
+
+.follow p span {
+  text-decoration: underline;
+}
+
+.followers-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followers-icon img {
+  width: 35px;
+  border-radius: 100%;
+  margin-left: -8px;
+}
+
+.follow button {
+  color: #ffffff;
+  font-size: 1.4rem;
+  background-color: #6495ff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.follow button:hover {
+  box-shadow: inset -10.5em 0 0 0 #0f1830, inset -10.5em 0 0 0 #0f1830;
+  border: 1px solid #6495ff;
+}
