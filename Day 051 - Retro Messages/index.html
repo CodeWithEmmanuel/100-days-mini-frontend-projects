@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Messages</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="message-container">
+      <div class="icon">
+        <div class="icon-image">
+          <img src="images/wifi.svg" />
+          <div class="wifi-dot"></div>
+          <div class="status-label">
+            <img src="images/check.svg" />
+          </div>
+          <img id="close-icon" src="images/x.svg" />
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,320L1440,64L1440,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="message">
+        <h2>Success!</h2>
+        <p>Connection works perfectly.</p>
+        <button>OK</button>
+      </div>
+    </div>
+
+    <div class="message-container">
+      <div class="icon icon-close">
+        <div class="icon-image">
+          <img src="images/wifi.svg" />
+          <div class="wifi-dot"></div>
+          <div class="status-label close">
+            <img src="images/x.svg" />
+          </div>
+          <img id="close-icon" src="images/x.svg" />
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,320L1440,64L1440,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="message">
+        <h2>Error!</h2>
+        <p>Connection couldn't be established.</p>
+        <button>RETRY</button>
+      </div>
+    </div>
+  </body>
+</html>
