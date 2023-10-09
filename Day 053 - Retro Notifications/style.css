@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: #acacac;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: #e3f5fd;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  background-color: #fff;
+  width: 36em;
+  height: 39em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 25px #7dcff298;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+}
+
+.notifications-header {
+  background-color: #00c3ff2e;
+  color: #00bfff;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  position: relative;
+}
+
+.notifications-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 25px;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.35s;
+  gap: 15px;
+}
+
+.notification-item:hover {
+  background-color: #00c3ff2e;
+  transform: scaleX(1.165);
+  padding: 0px 10px;
+}
+
+.notification-item img {
+  filter: invert(59%) sepia(54%) saturate(3562%) hue-rotate(161deg)
+    brightness(103%) contrast(105%);
+  transform: scaleX(-1);
+  width: 26px;
+  margin-bottom: 1.8px;
+}
+
+.notification-item h2 {
+  flex: 1;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.notification-item span {
+  border: 1.5px solid #91d217;
+  width: 45px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.header-shape {
+  background-color: #dcf5ff;
+  width: 50px;
+  height: 40px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  right: 22px;
+  top: -13px;
+}
+
+.notification-icons {
+  position: absolute;
+  right: 12px;
+  top: -97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.notification-icons > span {
+  padding: 25px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.message {
+  background-color: #f2fafe;
+}
+
+.bell {
+  background-color: #00bfff;
+  position: relative;
+}
+
+.notification-icons img {
+  width: 25px;
+}
+
+.message img {
+  filter: invert(59%) sepia(54%) saturate(3562%) hue-rotate(161deg)
+    brightness(103%) contrast(105%);
+}
+
+.bell img {
+  filter: invert(100%);
+}
+
+.message:hover {
+  background-color: #00bfff;
+}
+
+.message:hover #m-img {
+  filter: invert(100%);
+  transform: scale(1.2);
+}
+
+.bell:hover {
+  background-color: #f2fafe;
+}
+
+.bell:hover #b-img {
+  filter: invert(59%) sepia(54%) saturate(3562%) hue-rotate(161deg)
+    brightness(103%) contrast(105%);
+  transform: scale(1.2);
+}
+
+.total-notifications {
+  position: absolute;
+  color: #91d217;
+  background-color: #fbfefb;
+  width: 40px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 10px;
+  right: -15px;
+  top: 0px;
+}
+
+.bell:hover .total-notifications {
+  color: #fff;
+  background-color: #00bfff;
+  transition: all 0.35s;
+}
