@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Location</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="container-heading">Closest stores</h2>
+      <div class="location">
+        <div class="postal-code">
+          <label for="postal-code"><p>Postal code</p></label>
+          <input
+            type="text"
+            id="postal-code"
+            name="postal-code"
+            required
+            placeholder="5055"
+          />
+        </div>
+        <div class="desc">
+          <img src="images/map-pin.svg" />
+          <p>Use my location</p>
+        </div>
+      </div>
+      <div class="stores">
+        <div class="store-item">
+          <div class="store-name">
+            <h2>POINT Bergen Sentrum</h2>
+            <span>CLOSED</span>
+          </div>
+          <p>Strandagaten 55-57, 6007 Bergen</p>
+          <div class="open-hours">
+            <img src="images/clock.svg" />
+            <p>9:00 - 19:00</p>
+          </div>
+        </div>
+        <div class="store-item">
+          <div class="store-name">
+            <h2>POIVestkanten</h2>
+            <span class="store-open">OPEN</span>
+          </div>
+          <p>Strandagaten 55-57, 6007 Bergen</p>
+          <div class="open-hours">
+            <img src="images/clock.svg" />
+            <p>9:00 - 21:00</p>
+          </div>
+        </div>
+      </div>
+      <button class="view-all-btn">View all</button>
+      <div class="bg-shape"></div>
+    </div>
+  </body>
+</html>
