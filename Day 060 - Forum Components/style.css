@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-clr: #ffffff;
+  --secondary-clr: #ea3367;
+  --text-clr: #000000;
+  --tertiary-clr: #fff2f7;
+  --suplementary-clr: #bf67f0;
+}
+* {
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--text-clr);
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--tertiary-clr);
+  display: grid;
+  place-items: center;
+}
+
+.components {
+  display: grid;
+  place-content: center;
+  gap: 30px;
+}
+
+.notification-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .notification-box {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-clr);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .notification-check {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #b5e4a9ac;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #24af01;
+      margin-right: 20px;
+    }
+
+    .notification-content h3 {
+      font-size: 18px;
+      color: var(--text-clr);
+      margin-bottom: 10px;
+      font-weight: 500;
+
+      & span {
+        color: var(--secondary-clr);
+      }
+    }
+
+    .notification-content p {
+      color: var(--text-clr);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.form-component {
+  width: 600px;
+  padding: 30px;
+  background-color: var(--primary-clr);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & h2 {
+    color: #333;
+    color: var(--text-clr);
+  }
+
+  & input,
+  .select-box {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .select-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .select-box {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+
+  .select-box:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  & textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  & button.create-button {
+    padding: 10px 15px;
+    background-color: #e8476a;
+    color: var(--primary-clr);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  & button.cancel-button {
+    padding: 12px 40px;
+    background-color: #eff4fd;
+    color: var(--text-clr);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum Components</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d2b0fb4019.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="components">
+      <div class="notification-component">
+        <div class="notification-box">
+          <div class="notification-check">
+            <span>
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </div>
+          <div class="notification-content">
+            <h3>Solved by <span>Charlie_reid</span> in <span>post #2</span></h3>
+            <p>
+              The answer was identified. All redirects created can be found
+              under the hosting tab of the project settings.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-component">
+        <h2>Create a new Topic</h2>
+
+        <input type="text" placeholder="Type title, or paste a link here" />
+
+        <div class="select-group">
+          <div class="select-box">
+            <span>Category</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+
+          <div class="select-box">
+            <span>Tags</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <textarea
+          placeholder="Enter your description here"
+          rows="10"
+        ></textarea>
+
+        <div class="button-group">
+          <button class="create-button">+ Create Topic</button>
+          <button class="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
