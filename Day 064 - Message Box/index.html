@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Box</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d2b0fb4019.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-head">
+        <p>Send us a message</p>
+        <i class="fa-solid fa-xmark fa-beat"></i>
+      </div>
+      <div class="content-form">
+        <form method="post">
+          <label for="name">
+            <p>YOUR NAME</p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Walter"
+              required
+              class="txt-input"
+            />
+          </label>
+          <label for="email">
+            <p>EMAIL ADDRESS</p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="walter@email.com"
+              required
+              class="txt-input"
+            />
+          </label>
+
+          <label for="message">
+            <p>WHAT CAN WE DO FOR YOU?</p>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="7"
+              placeholder="Type your message here"
+            ></textarea>
+          </label>
+
+          <label for="file">
+            <p>ATTACHMENTS</p>
+            <span>
+              <input type="file" id="file" name="file" />
+            </span>
+          </label>
+
+          <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
