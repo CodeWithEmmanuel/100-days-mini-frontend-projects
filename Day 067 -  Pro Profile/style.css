@@ -1,0 +1,153 @@
+:root {
+  --bg-clr: #292240;
+  --ctn-bgclr: #231f39;
+  --txt-clr: #ffffff;
+  --btn-clr: #01bfc9;
+  --tg-clr: #feb80f;
+  --sec-clr: #1e1a36;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: var(--txt-clr);
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-clr);
+}
+
+.container {
+  background-color: var(--ctn-bgclr);
+  width: 35em;
+  height: 50em;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #1e1a36;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 150px;
+  row-gap: 5px;
+}
+
+.profile-banner {
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.top-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.top-menu button:hover {
+  transform: scale(1.1);
+}
+
+.pro-tag {
+  background-color: var(--tg-clr);
+  color: var(--ctn-bgclr);
+  border: none;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-weight: 600;
+}
+
+.profile-details {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px;
+  text-align: center;
+
+  & img {
+    width: 100px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 15px #1c273ab5;
+  }
+
+  & h3 {
+    font-weight: 300;
+  }
+
+  & p {
+    font-size: 1.2rem;
+  }
+}
+
+.engage-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  & button {
+    width: 120px;
+    height: 42px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  & button:active {
+    opacity: 0.5;
+  }
+
+  .message-button {
+    color: var(--txt-clr);
+    background-color: var(--btn-clr);
+    border: none;
+  }
+
+  .follow-button {
+    color: var(--btn-clr);
+    background-color: transparent;
+    border: 1px solid var(--btn-clr);
+  }
+}
+
+.gallery {
+  background-color: var(--sec-clr);
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px 1fr;
+
+  & h2 {
+    font-weight: 300;
+  }
+
+  .skills {
+    display: flex;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+
+    & span {
+      border: 1px solid var(--txt-clr);
+      height: 25px;
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem;
+      padding: 1px 10px;
+      border-radius: 2px;
+    }
+  }
+}
