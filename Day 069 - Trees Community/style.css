@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-clr: #0f1112;
+  --ctn-bgclr: #0d141b;
+  --txt-clr: #ffffff;
+  --pri-clr: #0a1016;
+  --sec-clr: #6dc628;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  width: 95%;
+  min-height: 650px;
+  background-color: var(--ctn-bgclr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 5px solid var(--pri-clr);
+  border-radius: 5px;
+  padding: 40px 0px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  & img {
+    width: 70px;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1.25rem;
+    width: 270px;
+  }
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .member {
+    background-color: var(--pri-clr);
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    & img {
+      width: 60px;
+      border-radius: 100%;
+    }
+
+    & h3 {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+
+    & span {
+      color: var(--sec-clr);
+      font-size: 0.9rem;
+      border: 1px solid var(--sec-clr);
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+  }
+
+  .member:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--sec-clr);
+  }
+}
+
+.btn button {
+  background-color: transparent;
+  color: var(--sec-clr);
+  border: 1px solid var(--sec-clr);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.4rem;
+  padding: 10px 35px;
+}
+
+.btn button:hover {
+  background-color: var(--sec-clr);
+  color: var(--ctn-bgclr);
+}
+
+.btn button:active {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    width: 850px;
+    padding: 20px;
+  }
+}
