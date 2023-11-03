@@ -1,0 +1,138 @@
+:root {
+  --bg-clr: #abb0b1;
+  --ctn-bgclr: #36474e;
+  --txt-clr: #ffffff;
+  --sec-clr: #3f535c;
+  --sup-clr: #adb1b1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  background-color: var(--bg-clr);
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: var(--ctn-bgclr);
+  width: 290px;
+  min-height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 22px;
+  padding: 30px;
+
+  .post-img {
+    width: 100%;
+    margin-bottom: -45px;
+    margin-top: -40px;
+  }
+}
+
+.post-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & p {
+    line-height: 1.5;
+  }
+
+  & span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--sup-clr);
+
+    .post-date {
+      background-color: #1a272d;
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  background-color: var(--sec-clr);
+  padding: 30px;
+
+  & span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    & p {
+      font-size: 1.1rem;
+    }
+
+    & i {
+      font-size: 1.3rem;
+      color: var(--sup-clr);
+    }
+  }
+
+  .like-post {
+    & i {
+      font-size: 1.3rem;
+      color: #fe3b81;
+    }
+  }
+}
+
+.comment {
+  display: none;
+}
+.show-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  opacity: 1;
+  border-top: 1px solid var(--sup-clr);
+  min-height: 10px;
+  padding: 30px;
+
+  & p {
+    font-size: 1.1rem;
+    font-style: italic;
+
+    &:nth-child(even) {
+      color: var(--bg-clr);
+    }
+  }
+}
