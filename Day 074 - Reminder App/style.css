@@ -1,0 +1,152 @@
+:root {
+  --bg-clr: #fe9a7e;
+  --pri-clr: #ffffff;
+  --sec-clr: #344750;
+  --hover-clr: #eef2f3;
+  --acc: #41545d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-clr);
+  color: var(--sec-clr);
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--pri-clr);
+  min-height: 75%;
+  width: 55em;
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr;
+}
+
+.sidebar {
+  background-color: var(--sec-clr);
+  display: flex;
+  flex-direction: column;
+  color: var(--pri-clr);
+  align-items: center;
+  justify-content: start;
+  padding-top: 20px;
+}
+
+.sidebar-item {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0px;
+  cursor: pointer;
+  min-height: 50px;
+  width: 100%;
+  padding: 0px 25px;
+  transition: all 0.3s;
+
+  & h2 {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  & p {
+    background-color: var(--acc);
+    font-size: 0.7rem;
+    font-weight: 100;
+    padding: 3px 7px;
+    border-radius: 70px;
+  }
+}
+
+.category:hover {
+  background-color: var(--pri-clr);
+  color: var(--sec-clr);
+}
+
+.category:hover p {
+  color: var(--pri-clr);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .search-box {
+    width: 80%;
+    height: 80%;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--acc);
+    padding: 20px;
+    color: var(--pri-clr);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.content {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+details {
+  & summary {
+    background-color: var(--hover-clr);
+    padding: 15px 35px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--acc);
+      color: var(--pri-clr);
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    & li {
+      cursor: pointer;
+      transition: all 0.2;
+
+      &:hover {
+        font-weight: 600;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+}
