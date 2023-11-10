@@ -1,0 +1,113 @@
+:root {
+  --bg-clr: #165b42b4;
+  --txt-clr: #fff;
+  --sec-clr: #e2e0e033;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  background-image: url(images/img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  justify-content: center;
+  min-height: 60vh;
+  background-size: 100% 100%;
+}
+
+.container p {
+  font-size: 1.1em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 2.8em;
+  font-weight: 500;
+}
+.counter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.counter h2 {
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.counter p {
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+.counter div {
+  background-color: var(--sec-clr);
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.counter div:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.counter div:first-child {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-clr);
+  z-index: -2;
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .counter div {
+    width: 200px;
+    height: 200px;
+  }
+}

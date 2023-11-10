@@ -1,0 +1,132 @@
+:root {
+  --bg-clr: #1f2123;
+  --ctn-bgclr: #25282a;
+  --txt-clr: #ffffff;
+  --sec-clr: #6d6e70;
+  --acc-clr: #f6705e;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  display: grid;
+  place-items: center;
+}
+.container {
+  box-shadow: 1px 1px 20px #1212129a;
+  height: 45em;
+  width: 35em;
+  border-radius: 0.8em;
+  background-color: var(--ctn-bgclr);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 130px;
+}
+
+.list-img {
+  position: relative;
+
+  & img {
+    width: 90px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+  }
+
+  .status-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--ctn-bgclr);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+
+    .status {
+      height: 8px;
+      width: 8px;
+      border-radius: 100%;
+    }
+
+    .status-ux {
+      background-color: #d491fa;
+    }
+
+    .status-ui {
+      background-color: #64efc2;
+    }
+
+    .status-web {
+      background-color: #ebb957;
+    }
+  }
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  & p {
+    color: var(--sec-clr);
+    font-size: 1.4rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+
+    & button {
+      width: 120px;
+      height: 35px;
+      cursor: pointer;
+      border: 1px solid var(--acc-clr);
+    }
+    & button:first-child {
+      background-color: transparent;
+      color: var(--txt-clr);
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+    }
+
+    & button:last-child {
+      color: var(--ctn-bgclr);
+      background-color: var(--acc-clr);
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--sec-clr);
+}
