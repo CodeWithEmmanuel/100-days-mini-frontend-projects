@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-clr: #25282a;
+  --ctn-bgclr: #1d1f20;
+  --ctn-bgclr-2: #2f3032;
+  --pri-clr: #e85a69;
+  --sec-clr: #76c2e8;
+  --txt-clr: #fff;
+  --gradient_1: linear-gradient(to right, #e85a69, #76c2e8);
+  --gradient_2: linear-gradient(to right, #76c2e8, #a39cc2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--ctn-bgclr);
+  width: 28em;
+  height: 48em;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 55%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: var(--ctn-bgclr-2);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: var(--pri-clr);
+  position: relative;
+
+  & h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  & h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 12px;
+
+  & span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    & img {
+      width: 20px;
+      filter: invert(100%);
+    }
+
+    & p {
+      font-size: 1.35rem;
+    }
+  }
+
+  & button {
+    border: none;
+    background-image: var(--gradient_1);
+    color: var(--pri-clr);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 150px;
+    height: 43px;
+    border-radius: 50px;
+    margin: 30px auto 0px;
+    cursor: pointer;
+    transition: all 0.2;
+    padding: 1px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    & span {
+      background-color: var(--ctn-bgclr);
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.wave {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+
+.preferred {
+  .plan {
+    color: var(--sec-clr);
+  }
+
+  & button {
+    background-image: var(--gradient_2);
+  }
+}
