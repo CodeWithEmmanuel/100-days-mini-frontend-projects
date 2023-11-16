@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --pri-clr: #4265e2;
+  --txt-clr: #ffffff;
+  --bg-clr: #2e3651;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: var(--txt-clr);
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 70em;
+  height: 35em;
+}
+
+.column {
+  flex: 1;
+  height: 100%;
+
+  & h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  & img {
+    filter: invert(100%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  .left-column-item {
+    flex: 1;
+    background-color: var(--pri-clr);
+    border-radius: 8px;
+    padding: 30px;
+  }
+
+  .places {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h2 {
+      margin-bottom: 8px;
+    }
+
+    & p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    & h2 {
+      font-size: 1.6rem;
+    }
+
+    & div {
+      display: flex;
+      align-items: center;
+      width: 155px;
+      justify-content: space-between;
+      cursor: pointer;
+
+      & img {
+        width: 15px;
+      }
+
+      & a {
+        font-size: 1.1rem;
+        color: var(--txt-clr);
+      }
+    }
+  }
+}
+
+.right-column {
+  background-color: var(--pri-clr);
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    opacity: 0.6;
+  }
+
+  & span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff39;
+    text-align: center;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
